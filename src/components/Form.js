@@ -2,7 +2,7 @@ import React,{ useState, Fragment } from 'react';
 import { calculateTotal } from '../helpers'
 
 function Form(props){
-     const {quantity, saveQuantity, term, saveTerm, total, saveTotal } = props;
+     const {quantity, saveQuantity, term, saveTerm, saveTotal, saveCharging } = props;
      //Define state
      const [error, saveError] = useState(false)
      //When the user clicks
@@ -14,13 +14,20 @@ function Form(props){
                saveError(true);
                return;
           }
-          saveError(false)
-          //make an appointment
-          const total = calculateTotal(quantity, term);
-          
-          
-          //Save total
-          saveTotal(total);
+          saveError(false);
+
+          //Enable Spinner
+          saveCharging(true)
+          setTimeout(() => {
+               //make an appointment
+               const total = calculateTotal(quantity, term);
+
+               //Save total
+               saveTotal(total);
+               
+               //To disable Spinner
+               saveCharging(false);
+          }, 3000);
      }
      
 
