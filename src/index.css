@@ -32,6 +32,7 @@ form, .mensajes {
 }
 .mensajes {
   text-align: center;
+  font-weight: bold;
 }
 .resultado {
   border: 2px solid #00b0d7;
