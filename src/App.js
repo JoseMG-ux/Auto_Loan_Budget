@@ -50,17 +50,14 @@ function App() {
             {components}
             </div>
       </div>
-
-      <div className="signature"><div className="left">Made with </div>  
-          <img src={logoHeart} className="heart" alt="logo" />
-              <div className="App">
-                        <img src={logoReact} className="App-logo" alt="logo" />
+              <div className="signature"><div className="left">Made with </div>  
+                  <img src={logoHeart} className="heart" alt="logo" />
+                      <div className="App">
+                                <img src={logoReact} className="App-logo" alt="logo" />
+                      </div>
+                  <div className="right"> by&nbsp;<a href="https://jlmakes.now.sh" rel="noopener">   Jose Moreno Gomez</a></div>
               </div>
-          <div className="right"> by&nbsp;<a href="https://jlmakes.now.sh" rel="noopener">   Jose Moreno Gomez</a></div>
-          
-    </div>
     </Fragment>
   );
 }
-
 export default App;
