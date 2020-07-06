@@ -56,7 +56,7 @@ function App() {
               <div className="App">
                         <img src={logoReact} className="App-logo" alt="logo" />
               </div>
-          <div className="right"> by&nbsp;<a href="https://jlmakes.now.sh" target="_blank" rel="noopener">   Jose Moreno Gomez</a></div>
+          <div className="right"> by&nbsp;<a href="https://jlmakes.now.sh" rel="noopener">   Jose Moreno Gomez</a></div>
           
     </div>
     </Fragment>
