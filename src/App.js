@@ -5,6 +5,10 @@ import Message from './components/Message';
 import Results from './components/Results';
 import Spinner from './components/Spinner';
 
+import logoHeart from './heartLogo.svg';
+import logoReact from './reactLogo.svg';
+import './index.css';
+
 
 function App() {
   //Define the State
@@ -34,20 +38,27 @@ function App() {
         title="Cotizador de Prestamos"
       />
       <div className='container'>
-      <Form
-        quantity = { quantity }
-        saveQuantity = { saveQuantity }
-        term = { term }
-        saveTerm = { saveTerm }
-        saveTotal = { saveTotal }
-        saveCharging = { saveCharging }
-      />
-      <div className="mensajes">
-      {components}
+        <Form
+          quantity = { quantity }
+          saveQuantity = { saveQuantity }
+          term = { term }
+          saveTerm = { saveTerm }
+          saveTotal = { saveTotal }
+          saveCharging = { saveCharging }
+        />
+            <div className="mensajes">
+            {components}
+            </div>
       </div>
-      
-      </div>
-    
+
+      <div className="signature"><div className="left">Made with </div>  
+          <img src={logoHeart} className="heart" alt="logo" />
+              <div className="App">
+                        <img src={logoReact} className="App-logo" alt="logo" />
+              </div>
+          <div className="right"> by&nbsp;<a href="https://jlmakes.now.sh" target="_blank" rel="noopener">   Jose Moreno Gomez</a></div>
+          
+    </div>
     </Fragment>
   );
 }
