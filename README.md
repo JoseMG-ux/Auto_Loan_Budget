@@ -1,3 +1,12 @@
+# Auto Loan Budget 🚀🚗
+
+> Auto loan quote based on the loan amount and the term to pay
+
+# 👨‍💻 ![Twitter Follow](https://img.shields.io/twitter/follow/Gzjosemgz?style=social)
+![Jose Moreno Gomez](https://repository-images.githubusercontent.com/276545026/3bb41780-bf18-11ea-9419-266e04dcfb34)
+
+<hr>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
